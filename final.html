@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>Fake Interview - تدريب مقابلات</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Cairo', sans-serif;
+      background: linear-gradient(135deg, #ff003c, #ff8a00);
+      color: #fff;
+      padding: 40px;
+    }
+    .form-container {
+      max-width: 650px;
+      margin: auto;
+      background: rgba(0, 0, 0, 0.85);
+      padding: 35px 30px;
+      border-radius: 20px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+      animation: fadeIn 1s ease-in-out;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(-20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .logo {
+      display: block;
+      margin: 0 auto 20px;
+      width: 120px;
+      filter: drop-shadow(0 0 5px #ffcc00);
+    }
+    h2 {
+      text-align: center;
+      color: #ffcc00;
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+    label {
+      display: block;
+      margin-top: 18px;
+      font-weight: 700;
+      color: #fff;
+    }
+    input, select {
+      width: 100%;
+      padding: 12px;
+      margin-top: 6px;
+      border: none;
+      border-radius: 10px;
+      font-size: 1em;
+      background: #222;
+      color: #fff;
+      transition: 0.3s ease;
+    }
+    input:focus, select:focus {
+      outline: none;
+      background: #333;
+      box-shadow: 0 0 10px #ffcc00;
+    }
+    button {
+      margin-top: 30px;
+      width: 100%;
+      padding: 14px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 12px;
+      background: linear-gradient(120deg, #ffcc00, #ff003c);
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.4s ease;
+    }
+    button:hover {
+      background: linear-gradient(120deg, #ffea00, #ff0055);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <img src="https://via.placeholder.com/120x120.png?text=Fake+Interview" alt="Fake Interview Logo" class="logo">
+    <h2>🔥 Fake Interview - تدريب مقابلات 🔥</h2>
+
+    <form action="/submit" method="POST">
+      <label for="name">الاسم:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="year">الفرقة:</label>
+      <select id="year" name="year" required>
+        <option value="">اختر الفرقة</option>
+        <option value="تالتة">تالتة</option>
+        <option value="رابعة">رابعة</option>
+      </select>
+ <label for="email">الايميل:</label>
+      <input type="text" id="email" email="email" required>
+
+      <label for="faculty">الكلية:</label>
+      <input type="text" id="faculty" name="faculty" required>
+
+      <label for="job">نوع الوظيفة اللي تحب تجربها:</label>
+      <select id="job" name="job" required>
+        <option value="">اختر الوظيفة</option>
+        <option value="HR">HR</option>
+        <option value="Software Developer">Software Developer</option>
+        <option value="Marketing">Marketing</option>
+        <option value="Graphic Designer">Graphic Designer</option>
+        <option value="Other">أخرى</option>
+      </select>
+
+      <label for="firstTime">هل دي أول مرة تعمل إنترفيو؟</label>
+      <select id="firstTime" name="firstTime" required>
+        <option value="">اختر إجابة</option>
+        <option value="نعم">نعم</option>
+        <option value="لا">لا</option>
+      </select>
+
+      <button type="submit">🚀 سجل دلوقتي</button>
+    </form>
+  </div>
+
+</body>
+</html>
